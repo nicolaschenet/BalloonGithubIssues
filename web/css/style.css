@@ -110,6 +110,7 @@ small {
 
 #addIssue div {
     margin-bottom: 15px;
+    clear: left;
 }
 
 #addIssue input {
@@ -174,4 +175,37 @@ small {
 
 .milestone h3, .milestone p {
     padding-left: 20px;
+}
+
+/** Exercice Nico ;) **/
+
+#add-new-issue-target {
+	display: none;
+	border: solid 1px #ccc;
+	background: #eee;
+	margin: 10px 0;
+	padding-top: 20px;
+	-moz-box-shadow: inset 0px 0px 5px #888, 0px 1px 0px #fff;
+	-webkit-box-shadow: inset 0px 0px 5px #888, 0px 1px 0px #fff;
+	box-shadow: inset 0px 0px 10px #ddd, 0px 1px 0px #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#add-new-issue-target form, 
+#add-new-issue-target .actions {
+	margin-bottom: 0px;
+}
+
+#add-new-issue-target form input[type="file"] {
+	background: transparent;
+}
+
+#add-new-issue-target .actions {
+	padding-left: 215px;
+}
+
+#issues, #milestones {
+	//position: absolute;	
 }

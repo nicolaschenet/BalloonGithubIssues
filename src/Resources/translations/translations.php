@@ -23,6 +23,7 @@ $app['translator.messages'] = array(
         'no_milestone'  => 'No milestone here',
         'open'          => 'Open issues',
         'closes'        => 'Closed issues',
+		'loading'		=> 'Loading...'
     ),
     'fr' => array(
         'login'         => 'Connexion',
@@ -46,5 +47,6 @@ $app['translator.messages'] = array(
         'no_milestone'  => 'Pas de date butoir ici',
         'open'          => 'Issues non résolues',
         'closes'        => 'Issues résolues',
+		'loading'		=> 'Chargement...'
     ),
 );

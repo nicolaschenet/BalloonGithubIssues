@@ -69,8 +69,10 @@ $app->match('/add', function (Request $request) use ($app) {
 
         $request->getSession()->setFlash('error', 'Your issue has not been submitted: '.$result['message'].'!<br/>'.json_encode($result['errors']));
     }
-
-    return $app['twig']->render('add.html.twig', array(
+	
+    $template = ( $request->isXmlHttpRequest() ? 'add-ajax.html.twig' : 'add.html.twig' );
+    
+    return $app['twig']->render($template, array(
         'form'          => $form->createView(),
         'issue'         => $request->request->get('issue', null),
         'description'   => $request->request->get('description', null),

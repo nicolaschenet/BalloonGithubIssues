@@ -2,7 +2,10 @@
 
 {% block header %}
     {{ parent() }}
-    <a href="{{ path('add') }}" class="btn primary float-right">{{ 'add_new' | trans }}</a>
+    <a href="{{ path('add') }}" data-loading-text="{{ 'loading' | trans }}" class="btn primary float-right" id="add-new-issue">{{ 'add_new' | trans }}</a>
+    <div id="add-new-issue-target">
+		<div>{# Ici on charge le formulaire #}</div>
+	</div>
     <ul id="issues_tabs" class="tabs" style="display:none;">
         <li><a href="#" class="see_issues">{{ 'issues' | trans }} ({{ issues|length }})</a></li>
         <li><a href="#" class="see_milestones">{{ 'milestones' | trans }} ({{ milestones|length }})</a></li>
@@ -85,10 +88,9 @@
         $(document).ready(function(){
             $("table#issuesList").tablesorter();
             $('.dropdown-toggle').dropdown();
-            $('.modal').modal({
-                keyboard: true,
-                backdrop: true,
-            });
-        });
+			$('.modal').modal({
+				keyboard: true,
+				backdrop: true
+			});
     </script>
 {% endblock %}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<buildpath>
+	<buildpathentry kind="src" path="app"/>
+	<buildpathentry kind="src" path="lib/GithubApi_v3"/>
+	<buildpathentry kind="src" path="src"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Bridge/Twig/Extension"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Bridge/Twig/Node"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Bridge/Twig/NodeVisitor"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Bridge/Twig/TokenParser"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Bridge/Twig/Translation"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Component/ClassLoader"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Component/Form"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Component/HttpFoundation"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Component/Translation"/>
+	<buildpathentry kind="src" path="vendor/Symfony/Component/Validator"/>
+	<buildpathentry kind="src" path="vendor/Twig"/>
+	<buildpathentry kind="src" path="vendor/Twig-extensions/lib/Twig/Extensions"/>
+	<buildpathentry kind="src" path="vendor/Twig-extensions/test"/>
+	<buildpathentry kind="src" path="web"/>
+	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
+</buildpath>
